@@ -9,7 +9,7 @@ import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png';
 import express from '../public/assets/skills/express.png';
-import Node from '../public/assets/skills/Node.png';
+import Node from '../public/assets/skills/node.png';
 
 const Skills = () => {
   return (
