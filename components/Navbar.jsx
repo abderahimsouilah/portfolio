@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import NavLogo from '../public/assets/navLogo.png';
+import me from '../public/assets/me.png';
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
@@ -103,7 +103,9 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image src={NavLogo} width="87" height="35" alt="/" />
+                <h1>
+                  <span className="text-6xl  text-[#5651e5]"> SR</span>
+                </h1>
               </Link>
               <div
                 onClick={handlNav}
