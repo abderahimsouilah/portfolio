@@ -14,7 +14,7 @@ async function handler(req, res) {
     }
     const newMessage = { name, phone, email, subject, message };
     let client;
-    var mongo = process.env.Mongo;
+    var mongo = process.env.MONGO_URI;
     try {
       client = await MongoClient.connect(mongo);
     } catch (err) {
