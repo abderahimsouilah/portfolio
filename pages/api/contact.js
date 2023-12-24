@@ -14,10 +14,9 @@ async function handler(req, res) {
     }
     const newMessage = { name, phone, email, subject, message };
     let client;
+    let mongo = process.env.mongo;
     try {
-      client = await MongoClient.connect(
-        'mongodb+srv://souilah:souilah@cluster0.u4dgsxh.mongodb.net/contact?retryWrites=true&w=majority'
-      );
+      client = await MongoClient.connect(mongo);
     } catch (err) {
       console.error('Error connecting to MongoDB:', err);
       res.status(500).json({ message: err });
