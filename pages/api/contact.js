@@ -14,7 +14,7 @@ async function handler(req, res) {
     }
     const newMessage = { name, phone, email, subject, message };
     let client;
-    let mongo = process.env.mongo;
+    var mongo = 'mongodb+srv://souilah:souilah@cluster0.u4dgsxh.mongodb.net/contact?retryWrites=true&w=majority';
     try {
       client = await MongoClient.connect(mongo);
     } catch (err) {
